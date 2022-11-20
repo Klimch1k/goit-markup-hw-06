@@ -548,10 +548,80 @@ a {
 .end-network {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: var(--main-back-color);
 }
 .network-icon-end {
   fill: currentColor;
+}
+
+.form-position {
+  margin-left: 93px;
+}
+
+.form-title {
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-back-color);
+}
+
+.form-mail {
+  width: 358px;
+  min-height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--second-back-color);
+}
+.form-mail::placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.form-mail:not(:placeholder-shown) {
+  padding-left: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.singup-btn {
+  margin-left: 12px;
+  padding-top: 10px;
+  padding-right: 28px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  border-radius: 4px;
+
+  font-family: "Roboto", "Athelas", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+
+  color: var(--main-back-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-color: transparent;
+  transition: box-shadow 250ms var(--timing-function);
+}
+.singup-btn-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-send {
+  margin-left: 10px;
 }
 
 /* СТИЛІЗАЦІЯ ПОРТФОЛІО */
@@ -725,12 +795,12 @@ a {
   right: 8px;
   min-width: 30px;
   min-height: 30px;
+  padding: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: fill 250ms var(--timing-function);
-
-  padding: 6px;
+  cursor: pointer;
 
   fill: currentColor;
   background: var(--main-back-color);
@@ -741,4 +811,75 @@ a {
 .close-modal:hover,
 .close-modal:focus {
   fill: var(--accent-color);
+}
+
+.modal-title {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 12px;
+
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+.form-area {
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.form-name,
+.form-tel,
+.form-email {
+  display: block;
+  width: 448px;
+  min-height: 58px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-comment {
+  display: block;
+  width: 448px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-label,
+.tel-label,
+.email-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-btn {
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 40px;
+  padding-top: 10px;
+  padding-right: 52px;
+  padding-bottom: 10px;
+  padding-left: 52px;
+
+  font-family: "Roboto", "Athelas", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  color: var(--main-back-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  cursor: pointer;
+  border-color: transparent;
+  transition: box-shadow 250ms var(--timing-function);
 }
