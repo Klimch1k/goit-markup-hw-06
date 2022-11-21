@@ -817,7 +817,7 @@ a {
   margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 12px;
+  margin-bottom: 30px;
 
   font-size: 20px;
   line-height: 1.15;
@@ -825,42 +825,103 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-color);
 }
-
 .form-area {
   position: relative;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 20px;
+  margin-bottom: 28px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .form-name,
 .form-tel,
 .form-email {
-  display: block;
+  display: inline-block;
   width: 448px;
-  min-height: 58px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.form-comment {
-  display: block;
-  width: 448px;
-  margin-left: auto;
-  margin-right: auto;
+  min-height: 40px;
+  padding-left: 42px;
 }
 
-.name-label,
-.tel-label,
-.email-label {
+.label-text {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.icon-phone,
+.icon-person,
+.icon-email {
   position: absolute;
   top: 0;
   left: 0;
+  transform: translateY(50%);
+  padding-left: 12px;
+}
+
+.comment-position {
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+
+.form-comment {
+  display: inline-block;
+  width: 448px;
+  padding: 12px 16px;
+
+  resize: none;
+}
+.comment-label {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+
+.form-comment::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.acceptance-position {
+  display: flex;
+  align-items: center;
+  margin-left: 52px;
+  margin-right: 51px;
+  margin-bottom: 30px;
+}
+
+.acceptance-label {
+  margin-left: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.acceptance-link {
+  text-decoration-line: underline;
+
+  color: var(--accent-color);
 }
 
 .modal-btn {
   display: inline-block;
-  margin-right: auto;
-  margin-left: auto;
+  margin-right: 164px;
+  margin-left: 164px;
   margin-bottom: 40px;
   padding-top: 10px;
   padding-right: 52px;
