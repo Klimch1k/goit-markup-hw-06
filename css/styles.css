@@ -789,10 +789,12 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-
   min-width: 528px;
   min-height: 581px;
+  padding: 40px;
+
+  transform: translate(-50%, -50%);
+
   background-color: var(--main-back-color);
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -823,8 +825,15 @@ a {
   fill: var(--accent-color);
 }
 
+.form-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .modal-title {
-  margin-top: 40px;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -838,8 +847,14 @@ a {
 .form-area {
   position: relative;
   margin-bottom: 28px;
-  margin-left: 40px;
-  margin-right: 40px;
+}
+
+.name-label {
+  display: block;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
 }
 
 .form-name,
@@ -849,7 +864,6 @@ a {
   width: 448px;
   min-height: 40px;
   padding-left: 42px;
-  cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
@@ -870,31 +884,19 @@ a {
   border-color: var(--accent-color);
 }
 
-.label-text {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-}
-
 .icon-phone,
 .icon-person,
 .icon-email {
   position: absolute;
-  top: 0;
+
+  top: 50%;
   left: 0;
-  transform: translateY(50%);
+
   padding-left: 12px;
 }
 
 .comment-position {
   position: relative;
-  margin-left: 40px;
-  margin-right: 40px;
   margin-bottom: 20px;
 }
 
@@ -903,7 +905,6 @@ a {
   width: 448px;
   padding: 12px 16px;
 
-  cursor: pointer;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
