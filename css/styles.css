@@ -555,7 +555,7 @@ a {
 }
 
 .form-position {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .form-title {
@@ -579,7 +579,6 @@ a {
   border-radius: 4px;
   background-color: var(--second-back-color);
   color: var(--main-back-color);
-  cursor: pointer;
   outline: none;
 
   transition: border-color 250ms var(--timing-function);
@@ -594,7 +593,6 @@ a {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-mail:hover,
 .form-mail:focus {
   border-color: var(--accent-color);
 }
@@ -619,8 +617,13 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-color: transparent;
-  transition: box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
 }
+.singup-btn:hover,
+.singup-btn:focus {
+  background-color: #188ce8;
+}
+
 .singup-btn-text {
   display: flex;
   align-items: center;
@@ -849,7 +852,9 @@ a {
   margin-bottom: 28px;
 }
 
-.name-label {
+.name-label,
+.tel-label,
+.email-label {
   display: block;
   font-weight: 400;
   font-size: 12px;
@@ -873,10 +878,7 @@ a {
 
 .form-name:focus,
 .form-tel:focus,
-.form-email:focus,
-.form-name:hover,
-.form-tel:hover,
-.form-email:hover {
+.form-email:focus {
   border-color: var(--accent-color);
 }
 
@@ -888,15 +890,13 @@ a {
 .icon-person,
 .icon-email {
   position: absolute;
-
-  top: 50%;
+  top: 46%;
   left: 0;
 
   padding-left: 12px;
 }
 
 .comment-position {
-  position: relative;
   margin-bottom: 20px;
 }
 
@@ -913,15 +913,11 @@ a {
   transition: border-color 250ms var(--timing-function);
 }
 
-.form-comment:focus,
-.form-comment:hover {
+.form-comment:focus {
   border-color: var(--accent-color);
 }
 .comment-label {
-  position: absolute;
-  bottom: 100%;
-  left: 0;
-
+  display: block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.16;
@@ -1009,5 +1005,9 @@ a {
 
   cursor: pointer;
   border-color: transparent;
-  transition: box-shadow 250ms var(--timing-function);
+  transition: background-color 250ms var(--timing-function);
+}
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #188ce8;
 }
