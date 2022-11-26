@@ -792,7 +792,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
   padding: 40px;
 
@@ -849,7 +849,7 @@ a {
 }
 .form-area {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 10px;
 }
 
 .name-label,
@@ -936,8 +936,7 @@ a {
 .acceptance-position {
   display: flex;
   align-items: center;
-  margin-left: 52px;
-  margin-right: 51px;
+
   margin-bottom: 30px;
 }
 
@@ -983,8 +982,6 @@ a {
 
 .modal-btn {
   display: inline-block;
-  margin-right: 164px;
-  margin-left: 164px;
   margin-bottom: 40px;
   padding-top: 10px;
   padding-right: 52px;
